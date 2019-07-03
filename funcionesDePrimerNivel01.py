@@ -1,4 +1,5 @@
 #funciones de primer nivel con return
+#funciones que devuelven funciones
 
 def maxi(*l):
     if len(l) == 0:
