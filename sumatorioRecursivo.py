@@ -5,3 +5,5 @@ def sumatorio(n):
         return 0
 
 print(sumatorio(4))
+
+#def factorial(n): para que hacerlo como ejercicio
