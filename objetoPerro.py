@@ -1,8 +1,8 @@
 class Perro():
-    def __init__(self, n, e, p):
-        self.nombre = n
-        self.edad = e
-        self.peso = p
+    def __init__(self, nombre, edad, peso):
+        self.nombre = nombre
+        self.edad = edad
+        self.peso = peso
         
     def ladrar(self):
         if self.peso >= 8:
@@ -17,6 +17,14 @@ class Perro():
         return "Perro {}, e: {}, p: {}".format(self.nombre, self.edad, self.peso)
     
 
+
+class Timido():
+    def __init__(self, nombre):
+        self.__nombre = nombre
+    
+    def preguntarNombreConCuidado(self):
+        return self.__nombre
+        
 #salchicho = Perro('Salchicho', 3, 12)
 #lola = Perro('Lola', 8, 1.5)
 #miko = Perro('Miko', 8, 3)
@@ -31,3 +39,10 @@ class Perro():
     
 #salchicho = Perro('Salchicho', 3, 12)
 #print(salchicho)
+        
+#chico = Timido('Raul')
+#self.__nombre = nombre
+#asi no nos devuelve el nombre por que el método es privado
+#chico.preguntarNombreConCuidado()
+#asi si nos lo devuelve por que le hemos dado permiso a acceder al atributo mediante una función
+    
